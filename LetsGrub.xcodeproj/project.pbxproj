@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1F74001C6AA64B00839B98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1F73FF1C6AA64B00839B98 /* MapKit.framework */; };
 		7BE41FBA1C697D2E001C773D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE41FB91C697D2E001C773D /* AppDelegate.swift */; };
 		7BE41FBC1C697D2E001C773D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE41FBB1C697D2E001C773D /* ViewController.swift */; };
 		7BE41FBF1C697D2E001C773D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE41FBD1C697D2E001C773D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B1F73FF1C6AA64B00839B98 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7BE41FB61C697D2E001C773D /* LetsGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE41FB91C697D2E001C773D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE41FBB1C697D2E001C773D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1F74001C6AA64B00839B98 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		7BE41FAD1C697D2E001C773D = {
 			isa = PBXGroup;
 			children = (
+				7B1F73FF1C6AA64B00839B98 /* MapKit.framework */,
 				7BE41FB81C697D2E001C773D /* LetsGrub */,
 				7BE41FCD1C697D2E001C773D /* LetsGrubTests */,
 				7BE41FD81C697D2E001C773D /* LetsGrubUITests */,
@@ -193,6 +197,11 @@
 				TargetAttributes = {
 					7BE41FB51C697D2E001C773D = {
 						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7BE41FC91C697D2E001C773D = {
 						CreatedOnToolsVersion = 7.1;
@@ -484,6 +493,7 @@
 				7BE41FE01C697D2E001C773D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BE41FE11C697D2E001C773D /* Build configuration list for PBXNativeTarget "LetsGrubTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +502,7 @@
 				7BE41FE31C697D2E001C773D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BE41FE41C697D2E001C773D /* Build configuration list for PBXNativeTarget "LetsGrubUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +511,7 @@
 				7BE41FE61C697D2E001C773D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
