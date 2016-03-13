@@ -1,0 +1,6 @@
+framework module Pods_LetsGrubTests {
+  umbrella header "Pods-LetsGrubTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
